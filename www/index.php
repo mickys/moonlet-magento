@@ -66,11 +66,11 @@ require_once $mageFilename;
 
 #Varien_Profiler::enable();
 
-if (isset($_SERVER['MAGE_IS_DEVELOPER_MODE'])) {
-    Mage::setIsDeveloperMode(true);
-}
+#if (isset($_SERVER['MAGE_IS_DEVELOPER_MODE'])) {
+Mage::setIsDeveloperMode(true);
+#}
 
-#ini_set('display_errors', 1);
+ini_set('display_errors', 1);
 
 umask(0);
 
@@ -81,3 +81,5 @@ $mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : ''
 $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
 
 Mage::run($mageRunCode, $mageRunType);
+
+
