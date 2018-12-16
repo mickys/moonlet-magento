@@ -1,0 +1,10 @@
+\.idea/
+\.DS_Store
+\.nyc_output
+www/app/etc/local.xml
+www/var/cache/*
+!www/var/cache/.gitkeep 
+www/var/locks/*
+!www/var/locks/.gitkeep 
+www/var/session/*
+!www/var/session/.gitkeep 
